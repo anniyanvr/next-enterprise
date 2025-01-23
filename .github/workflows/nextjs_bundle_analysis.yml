@@ -4,9 +4,11 @@ on:
   push:
     branches:
       - main
+      - develop
   pull_request:
     branches:
       - main
+      - develop
   workflow_dispatch:
 
 defaults:
@@ -20,15 +22,22 @@ jobs:
       SKIP_ENV_VALIDATION: true
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Set up node
         uses: actions/setup-node@v3
         with:
-          node-version: "18.x"
+          node-version: "20.x"
 
-      - name: Install dependencies
-        run: yarn install --frozen-lockfile
+      - name: "Install pnpm & dependencies"
+        uses: pnpm/action-setup@v4
+        with:
+          run_install: |
+            - recursive: true
+            - args: [--frozen-lockfile]
+
+      # - name: Install dependencies
+      #   run: pnpm install --frozen-lockfile
 
       - name: Restore next build
         uses: actions/cache@v3
@@ -44,21 +53,21 @@ jobs:
         env:
           SKIP_BUILD_PRODUCT_REDIRECTS: 1
         # change this if your site requires a custom build command
-        run: yarn build
+        run: pnpm build
 
       # Here's the first place where next-bundle-analysis' own script is used
       # This step pulls the raw bundle stats for the current bundle
       - name: Analyze bundle
-        run: npx -p nextjs-bundle-analysis report
+        run: node report-bundle-size.js
 
       - name: Upload bundle
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: bundle
           path: .next/analyze/__bundle_analysis.json
 
       - name: Download base branch bundle stats
-        uses: dawidd6/action-download-artifact@v2
+        uses: dawidd6/action-download-artifact@v8
         if: success() && github.event.number
         with:
           workflow: nextjs_bundle_analysis.yml

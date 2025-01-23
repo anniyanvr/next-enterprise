@@ -1,67 +1,75 @@
-# Next.js Enterprise Boilerplate
 
-![Project intro image](./project-logo.png)
+### Next.js Enterprise Boilerplate 
+
+</br>
+
+  [![GitHub Actions Workflow Status][check-workflow-badge]][check-workflow-badge-link] [![GitHub License][github-license-badge]][github-license-badge-link] [![GitHub contributors][github-contributors-badge]][github-contributors-badge-link] [![Discord][discord-badge]][discord-badge-link] [![Blazity][made-by-blazity-badge]][made-by-blazity-badge-link]
 
 Welcome to the _Next.js Enterprise Boilerplate_, an open-source template for enterprise projects! It's loaded with features that'll help you build a high-performance, maintainable, and enjoyable app. We've done all the heavy lifting for you, so sit back, relax, and get ready to conquer the world with your incredible app! 🌍
 
-<br />
-<a href="https://discord.gg/fyWtyNKmfX" style="width: 100%; display: flex; justify-content: center;">
-  <img src="https://discordapp.com/api/guilds/1111676875782234175/widget.png?style=banner2" alt="Blazity Discord Banner"/>
-</a>
-<br />
+> [!NOTE]
+> **Blazity** is a group of Next.js/Headless experts. Contact us at [contact@blazity.com](https://blazity.com) if you’d like to talk about your project or just to have a chat with us
 
-## 📚 Features
+### Feature Manager (nefi)
+<a href="https://github.com/blazity/nefi"><img width="250" align="right" alt="nefi-badge" src="https://github.com/user-attachments/assets/37941f8c-944f-44c0-b3c7-b1d322431871" /></a>
 
-With this template, you get all the awesomeness you need:
+**nefi** (next-enterprise feature integrations) is an AI agent that will help configuring the boilerplate to your needs using natural language. It can remove/install dependencies, modify files and manage Git. 
 
-- 🏎️ **[Next.js](https://nextjs.org/)** - Fast by default, with config optimized for performance
+Simply set up the boilerplate, follow guide [in the getting started section](#getting-started) and type `npx nefi` in your terminal!
+
+Leave a ⭐ for [nefi on GitHub](https://github.com/blazity/nefi) and check out the [nefi.ai docs](https://nefi.ai/)!
+
+
+### Integrated features
+
+Don't worry, with this template you will anyways get all the awesomeness you need:
+
+- 🏎️ **[Next.js 15](https://nextjs.org/)** - Fast by default, with config optimized for performance (with **App Directory**)
 - 💅 **[Tailwind CSS](https://tailwindcss.com/)** - A utility-first CSS framework for rapid UI development
 - ✨ **[ESlint](https://eslint.org/)** and **[Prettier](https://prettier.io/)** - For clean, consistent, and error-free code
 - 🛠️ **[Extremely strict TypeScript](https://www.typescriptlang.org/)** - With [`ts-reset`](https://github.com/total-typescript/ts-reset) library for ultimate type safety
-- 📊 **[Bundle analyzer plugin](https://www.npmjs.com/package/@next/bundle-analyzer)** - Keep an eye on your bundle size
-- 🧪 **[Jest](https://jestjs.io/)** and **[React Testing Library](https://testing-library.com/react)** - For rock-solid unit and integration tests
-- 🎭 **[Playwright](https://playwright.dev/)** - Write end-to-end tests like a pro
-- 📕 **[Storybook](https://storybook.js.org/)** - Create, test, and showcase your components
-- 🌬️ **Smoke Testing** and **Acceptance Tests** - For confidence in your deployments
-- 📝 **[Conventional commits git hook](https://www.conventionalcommits.org/)** - Keep your commit history neat and tidy
-- 🔍 **[Observability](https://opentelemetry.io/)** - Open Telemetry integration for seamless monitoring
-- 🎯 **[Absolute imports](https://nextjs.org/docs/advanced-features/module-path-aliases)** - No more spaghetti imports
-- ⚕️ **[Health checks](https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/)** - Kubernetes-compatible for robust deployments
-- 🧩 **[Radix UI](https://www.radix-ui.com/)** - Headless UI components for endless customization
-- 💎 **[CVA](http://cva.style/)** - Create a consistent, reusable, and atomic design system
-- 🤖 **[Renovate BOT](https://www.whitesourcesoftware.com/free-developer-tools/renovate)** - Auto-updating dependencies, so you can focus on coding
-- 🩹 **[Patch-package](https://www.npmjs.com/package/patch-package)** - Fix external dependencies without losing your mind
-- 📈 **Components coupling and cohesion graph** - A tool for managing component relationships
 - 🚀 **[GitHub Actions](https://github.com/features/actions)** - Pre-configured actions for smooth workflows, including Bundle Size and performance stats
-- 🤖🧠 **[Automated ChatGPT Code Reviews](https://openai.com/chatgpt)** - **Stay on the cutting edge with AI-powered code reviews!**
 - 💯 **Perfect Lighthouse score** - Because performance matters
-- 🚢 **[Semantic Release](https://github.com/semantic-release/semantic-release)** - for automatic changelog
-- 💻 **[T3 Env](https://env.t3.gg/)** - Manage your environment variables with ease
+- **[Bundle analyzer plugin](https://www.npmjs.com/package/@next/bundle-analyzer)** - Keep an eye on your bundle size
+- **[Jest](https://jestjs.io/)** and **[React Testing Library](https://testing-library.com/react)** - For rock-solid unit and integration tests
+- **[Playwright](https://playwright.dev/)** - Write end-to-end tests like a pro
+- **[Storybook](https://storybook.js.org/)** - Create, test, and showcase your components
+- **Smoke Testing** and **Acceptance Tests** - For confidence in your deployments
+- **[Conventional commits git hook](https://www.conventionalcommits.org/)** - Keep your commit history neat and tidy
+- **[Observability](https://opentelemetry.io/)** - Open Telemetry integration for seamless monitoring
+- **[Absolute imports](https://nextjs.org/docs/advanced-features/module-path-aliases)** - No more spaghetti imports
+- **[Health checks](https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/)** - Kubernetes-compatible for robust deployments
+- **[Radix UI](https://www.radix-ui.com/)** - Headless UI components for endless customization
+- **[CVA](http://cva.style/)** - Create a consistent, reusable, and atomic design system
+- **[Renovate BOT](https://www.whitesourcesoftware.com/free-developer-tools/renovate)** - Auto-updating dependencies, so you can focus on coding
+- **[Patch-package](https://www.npmjs.com/package/patch-package)** - Fix external dependencies without losing your mind
+- **Components coupling and cohesion graph** - A tool for managing component relationships
+- **[Semantic Release](https://github.com/semantic-release/semantic-release)** - for automatic changelog
+- **[T3 Env](https://env.t3.gg/)** - Manage your environment variables with ease
 
 ## Table of Contents
 
 - [Next.js Enterprise Boilerplate](#nextjs-enterprise-boilerplate)
-  - [📚 Features](#-features)
+  - [Features](#features)
   - [Table of Contents](#table-of-contents)
-  - [🎯 Getting Started](#-getting-started)
-  - [🚀 Deployment](#-deployment)
-  - [📃 Scripts Overview](#-scripts-overview)
-  - [🔗 Coupling Graph](#-coupling-graph)
-  - [🧪 Testing](#-testing)
+  - [Getting Started](#-getting-started)
+  - [Deployment](#-deployment)
+  - [Scripts Overview](#-scripts-overview)
+  - [Coupling Graph](#-coupling-graph)
+  - [Testing](#-testing)
     - [Running Tests](#running-tests)
     - [Acceptance Tests](#acceptance-tests)
     - [Smoke Testing](#smoke-testing)
-  - [🎨 Styling and Design System](#-styling-and-design-system)
+  - [Styling and Design System](#-styling-and-design-system)
     - [CVA - A New Approach to Variants](#cva---a-new-approach-to-variants)
-  - [💾 State Management](#-state-management)
+  - [State Management](#-state-management)
     - [Zustand](#zustand)
     - [Jotai](#jotai)
     - [Recoil](#recoil)
-  - [🤖 ChatGPT Code Review](#-chatgpt-code-review)
-  - [💻 Environment Variables handling](#-environment-variables-handling)
-  - [🤝 Contribution](#-contribution)
-  - [💌 Support](#support)
-  - [📜 License](#-license)
+  - [Environment Variables handling](#-environment-variables-handling)
+  - [Contribution](#-contribution)
+  - [Support](#support)
+  - [License](#-license)
   - [Contributors](#contributors)
 
 ## 🎯 Getting Started
@@ -72,19 +80,19 @@ To get started with this boilerplate, follow these steps:
 
 ```bash
 ## Don't forget to ⭐ star and fork it first :)
-git clone https://github.com/<your_username)/next-enterprise.git
+git clone https://github.com/<your_username>/next-enterprise.git
 ```
 
 2. Install the dependencies:
 
 ```bash
-yarn install --frozen-lockfile
+pnpm install --frozen-lockfile
 ```
 
 3. Run the development server:
 
 ```bash
-yarn dev
+pnpm run dev
 ```
 
 4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
@@ -121,7 +129,6 @@ The following scripts are available in the `package.json`:
 - `e2e:ui`: Runs end-to-end tests with UI
 - `format`: Formats the code with Prettier
 - `postinstall`: Applies patches to external dependencies
-- `preinstall`: Ensures the project is installed with Yarn
 - `coupling-graph`: **Generates a coupling and cohesion graph for the components**
 
 ## 🔗 Coupling Graph
@@ -129,7 +136,7 @@ The following scripts are available in the `package.json`:
 The `coupling-graph` script is a useful tool that helps visualize the coupling and connections between your project's internal modules. It's built using the [Madge](https://github.com/pahen/madge) library. To generate the graph, simply run the following command:
 
 ```bash
-yarn coupling-graph
+pnpm run coupling-graph
 ```
 
 This will create a `graph.svg` file, which contains a graphical representation of the connections between your components. You can open the file with any SVG-compatible viewer.
@@ -142,9 +149,9 @@ This boilerplate comes with various testing setups to ensure your application's 
 
 ### Running Tests
 
-- **Unit and integration tests**: Run Jest tests using `yarn test`
-- **End-to-end tests (headless mode)**: Run Playwright tests in headless mode with `yarn e2e:headless`
-- **End-to-end tests (UI mode)**: Run Playwright tests with UI using `yarn e2e:ui`
+- **Unit and integration tests**: Run Jest tests using `pnpm run test`
+- **End-to-end tests (headless mode)**: Run Playwright tests in headless mode with `pnpm run e2e:headless`
+- **End-to-end tests (UI mode)**: Run Playwright tests with UI using `pnpm run e2e:ui`
 
 <img width="1392" alt="image" src="https://user-images.githubusercontent.com/28964599/233666655-93b7d08b-2fd8-406a-b43c-44d4d96cf387.png">
 
@@ -186,7 +193,7 @@ export const FilledForm: Story = {
 
 ### Smoke Testing
 
-In this boilerplate, we use Storybook's out-of-the-box support for smoke testing to verify that components render correctly without any errors. Just run `yarn test-storybook` to perform smoke testing. Remember to write stories in JSX or TSX format only. Smoke testing and a lot of other functionalities dont work well with MDX stories.
+In this boilerplate, we use Storybook's out-of-the-box support for smoke testing to verify that components render correctly without any errors. Just run `pnpm run test-storybook` to perform smoke testing. Remember to write stories in JSX or TSX format only. Smoke testing and a lot of other functionalities dont work well with MDX stories.
 
 ## 🎨 Styling and Design System
 
@@ -217,14 +224,6 @@ While this boilerplate doesn't include a specific state management library, we b
 [Recoil](https://recoiljs.org/) is a state management library developed by Facebook, specifically designed for React applications. By utilizing atoms and selectors, Recoil allows you to efficiently manage state and derived state. Its key benefit is the ability to update components only when the state they're subscribed to changes, reducing unnecessary re-renders and keeping your application fast and efficient. Recoil also offers great developer experience with built-in debugging tools.
 
 Choose the library that best fits your requirements and project structure to ensure an efficient state management solution for your application.
-
-## 🤖 ChatGPT Code Review
-
-We've integrated the innovative [ChatGPT Code Review](https://github.com/anc95/ChatGPT-CodeReview) for AI-powered, automated code reviews. This feature provides real-time feedback on your code, helping improve code quality and catch potential issues.
-
-To use ChatGPT Code Review, add an `OPENAI_API_KEY` environment variable with an appropriate key from the OpenAI platform. For setup details, refer to the [Using GitHub Actions](https://github.com/anc95/ChatGPT-CodeReview#using-github-actions) section in the documentation.
-
-![image](https://user-images.githubusercontent.com/28964599/233685071-e1371edf-6359-41c3-a989-335d6ee09cb7.png)
 
 ## 💻 Environment Variables handling
 
@@ -270,6 +269,13 @@ Contributions are always welcome! To contribute, please follow these steps:
 
 If you're looking for help or simply want to share your thoughts about the project, we encourage you to join our Discord community. Here's the link: [https://blazity.com/discord](https://blazity.com/discord). It's a space where we exchange ideas and help one another. Everyone's input is appreciated, and we look forward to welcoming you.
 
+<br />
+<a href="https://discord.gg/fyWtyNKmfX" style="width: 100%; display: flex; justify-content: center;">
+  <img src="https://discordapp.com/api/guilds/1111676875782234175/widget.png?style=banner2" alt="Blazity Discord Banner"/>
+</a>
+<br />
+
+
 ## 📜 License
 
 This project is licensed under the MIT License. For more information, see the [LICENSE](./LICENSE) file.
@@ -284,6 +290,7 @@ This project is licensed under the MIT License. For more information, see the [L
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="https://bstefanski.com/"><img src="https://avatars.githubusercontent.com/u/28964599?v=4?s=100" width="100px;" alt="Bart Stefanski"/><br /><sub><b>Bart Stefanski</b></sub></a><br /><a href="https://github.com/Blazity/next-enterprise/commits?author=bmstefanski" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/jjablonski-it"><img src="https://avatars.githubusercontent.com/u/51968772?v=4?s=100" width="100px;" alt="Jakub Jabłoński"/><br /><sub><b>Jakub Jabłoński</b></sub></a><br /><a href="#infra-jjablonski-it" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://neg4n.dev/"><img src="https://avatars.githubusercontent.com/u/57688858?v=4?s=100" width="100px;" alt="Igor Klepacki"/><br /><sub><b>Igor Klepacki</b></sub></a><br /><a href="https://github.com/Blazity/next-enterprise/commits?author=neg4n" title="Documentation">📖</a></td>
     </tr>
   </tbody>
   <tfoot>
@@ -301,3 +308,17 @@ This project is licensed under the MIT License. For more information, see the [L
 <!-- prettier-ignore-end -->
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
+
+<!-- Badges and links -->
+
+[check-workflow-badge]: https://img.shields.io/github/actions/workflow/status/blazity/next-enterprise/check.yml?label=check
+[github-license-badge]: https://img.shields.io/github/license/blazity/next-enterprise?link=https%3A%2F%2Fgithub.com%2FBlazity%2Fnext-enterprise%2Fblob%2Fmain%2FLICENSE
+[github-contributors-badge]: https://img.shields.io/github/contributors/blazity/next-enterprise?link=https%3A%2F%2Fgithub.com%2FBlazity%2Fnext-enterprise%2Fgraphs%2Fcontributors
+[discord-badge]: https://img.shields.io/discord/1111676875782234175?color=7b8dcd&link=https%3A%2F%2Fblazity.com%2Fdiscord
+[made-by-blazity-badge]: https://img.shields.io/badge/made_by-Blazity-blue?color=FF782B&link=https://blazity.com/
+
+[check-workflow-badge-link]: https://github.com/Blazity/next-enterprise/actions/workflows/check.yml
+[github-license-badge-link]: https://github.com/Blazity/next-enterprise/blob/main/LICENSE
+[github-contributors-badge-link]: https://github.com/Blazity/next-enterprise/graphs/contributors
+[discord-badge-link]: https://blazity.com/discord
+[made-by-blazity-badge-link]: https://blazity.com/?utm_source=nextenterprise&utm_medium=github
